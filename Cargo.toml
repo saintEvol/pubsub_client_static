@@ -1,0 +1,36 @@
+[package]
+name = "solana-pubsub-static"
+description = "Solana Pubsub Client Static"
+#documentation = "https://docs.rs/solana-pubsub-client"
+version = "2.2.7"
+edition = "2024"
+resolver = "3"
+
+[dependencies]
+crossbeam-channel = { version = "0.5.15" }
+futures-util = {version = "0.3.29"}
+http = {version = "0.2.12"}
+log = {version = "0.4.27"}
+semver = {version = "1.0.26"}
+serde = {version = "1.0.219"}
+serde_derive = {version = "1.0.219"}
+serde_json = {version = "1.0.140"}
+solana-account-decoder-client-types = {version = "2.2.7"}
+solana-clock = {version = "2.2.1"}
+solana-pubkey = {version = "2.2.1"}
+solana-rpc-client-api = {version = "2.2.7"}
+solana-signature = {version = "2.2.1"}
+thiserror = {version = "2.0.12"}
+tokio = { version = "1.43.0", features = ["full"] }
+tokio-stream = {version = "0.1.17"}
+tokio-tungstenite = { version = "0.20.1", features = ["rustls-tls-webpki-roots"] }
+tungstenite = { version = "0.20.1", features = ["rustls-tls-webpki-roots"] }
+url = {version = "2.5.4"}
+
+[dev-dependencies]
+anyhow = {version = "1.0.98"}
+solana-commitment-config = {version = "2.2.1"}
+solana-pubkey = { version = "2.2.1", features = ["rand"] }
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
