@@ -1571,33 +1571,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "solana-pubsub-static"
-version = "2.2.7"
-dependencies = [
- "anyhow",
- "crossbeam-channel",
- "futures-util",
- "http",
- "log",
- "semver",
- "serde",
- "serde_derive",
- "serde_json",
- "solana-account-decoder-client-types",
- "solana-clock",
- "solana-commitment-config",
- "solana-pubkey",
- "solana-rpc-client-api",
- "solana-signature",
- "thiserror 2.0.12",
- "tokio",
- "tokio-stream",
- "tokio-tungstenite",
- "tungstenite",
- "url",
-]
-
-[[package]]
 name = "solana-rent"
 version = "2.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1819,6 +1792,33 @@ dependencies = [
  "serde_derive",
  "solana-sanitize",
  "solana-serde-varint",
+]
+
+[[package]]
+name = "solana_pubsub_client_static"
+version = "2.2.7"
+dependencies = [
+ "anyhow",
+ "crossbeam-channel",
+ "futures-util",
+ "http",
+ "log",
+ "semver",
+ "serde",
+ "serde_derive",
+ "serde_json",
+ "solana-account-decoder-client-types",
+ "solana-clock",
+ "solana-commitment-config",
+ "solana-pubkey",
+ "solana-rpc-client-api",
+ "solana-signature",
+ "thiserror 2.0.12",
+ "tokio",
+ "tokio-stream",
+ "tokio-tungstenite",
+ "tungstenite",
+ "url",
 ]
 
 [[package]]

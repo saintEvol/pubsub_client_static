@@ -1,5 +1,5 @@
 [package]
-name = "solana-pubsub-static"
+name = "solana_pubsub_client_static"
 description = "Solana Pubsub Client Static"
 #documentation = "https://docs.rs/solana-pubsub-client"
 version = "2.2.7"
